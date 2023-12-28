@@ -7,7 +7,50 @@
 ## Overview
 
 This project utilizes Azure Cognitive Services' Speech SDK to facilitate real-time translation of spoken English into various target languages. The Python script captures speech input, translates it, and synthesizes the translated text into speech in the selected language.
+## Azure Cognitive Services Integration
 
+### Setup Steps
+
+1. **Create Cognitive Services Resource**  
+Create a Cognitive Services resource in the Azure portal.
+  
+2. **Retrieve Subscription Key and Region**  
+Retrieve subscription key and region from the created Cognitive Services resource for authentication in the Python script.
+  
+3. **Enable Required Services**  
+Ensure services like Speech Translation API are enabled within the Cognitive Services resource.
+
+
+## Environmental Configuration
+
+### Environment Variable File (`.env`)
+
+To maintain secure access to Azure Cognitive Services and manage sensitive information, this project utilizes an environment variable file (`dotenv`) named `.env`. This file contains crucial details required for authentication and access to Azure services.
+
+### Example `.env` File Structure:
+
+```plaintext
+COG_SERVICE_ENDPOINT=https://your-cognitive-service-endpoint/
+COG_SERVICE_KEY=your-cognitive-service-key
+COG_SERVICE_REGION=your-cognitive-service-region
+Directory_ID=your-directory-id
+```
+
+### Instructions:
+
+1. **Create a `.env` File:** Create a file named `.env` in the project directory.
+   
+2. **Populate with Necessary Details:** Add the following key-value pairs to the `.env` file:
+   - `COG_SERVICE_ENDPOINT`: Your Azure Cognitive Service endpoint URL.
+   - `COG_SERVICE_KEY`: Your Azure Cognitive Service subscription key.
+   - `COG_SERVICE_REGION`: Azure region where your Cognitive Service is hosted.
+   - `Directory_ID`: Your Azure Active Directory ID (for access control and authentication).
+
+3. **Replace Placeholder Values:** Replace the placeholders (`your-cognitive-service-endpoint`, `your-cognitive-service-key`, `your-cognitive-service-region`, `your-directory-id`) with your actual Azure Cognitive Services details.
+
+4. **Load Environment Variables:** Ensure to load these environment variables within your application using a library like `dotenv` to securely access Azure services.
+
+By utilizing this `.env` file, the project securely accesses Azure Cognitive Services without exposing sensitive information directly within the codebase.
 ## Project Components
 
 ### Code Structure
@@ -34,6 +77,7 @@ The project consists of Python code leveraging Azure Cognitive Services:
         - Sets up translation configuration for Azure Cognitive Services with the provided key and region.
         - Defines the source language for speech recognition as 'en-US'.
         - Adds multiple target languages for translation (`'fr'`, `'es'`, `'hi'`).
+        - You may add **other langauage** as well.
     
     - **Speech Configuration**
         - Sets up the speech configuration using the Cognitive Services key and region.
@@ -63,23 +107,8 @@ The project consists of Python code leveraging Azure Cognitive Services:
 4. **Main Function Call**
     - Executes the `main()` function if the script is directly executed (not imported).
 
-### Azure Cognitive Services Integration
 
-### Setup Steps
 
-1. **Create Cognitive Services Resource**  
-Create a Cognitive Services resource in the Azure portal.
-  
-2. **Retrieve Subscription Key and Region**  
-Retrieve subscription key and region from the created Cognitive Services resource for authentication in the Python script.
-  
-3. **Enable Required Services**  
-Ensure services like Speech Translation API are enabled within the Cognitive Services resource.
-
-## Environmental Configuration
-
-**Set Environment Variables**  
- Store subscription key and region as environment variables (`COG_SERVICE_KEY` and `COG_SERVICE_REGION`) for secure access within the Python script.
 
 ## Resource Management and Monitoring
 
