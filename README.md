@@ -1,5 +1,3 @@
----
-
 # Real-Time Speech Translation using Azure Cognitive Services
 
 **Author:** Kunal Yadav  
@@ -69,47 +67,47 @@ The project consists of Python code leveraging Azure Cognitive Services:
 
 ### Setup Steps
 
-1. **Create Cognitive Services Resource**
-   - **Action:** Create a Cognitive Services resource in the Azure portal.
+1. **Create Cognitive Services Resource**  
+Create a Cognitive Services resource in the Azure portal.
   
-2. **Retrieve Subscription Key and Region**
-   - **Action:** Retrieve subscription key and region from the created Cognitive Services resource for authentication in the Python script.
+2. **Retrieve Subscription Key and Region**  
+Retrieve subscription key and region from the created Cognitive Services resource for authentication in the Python script.
   
-3. **Enable Required Services**
-   - **Action:** Ensure services like Speech Translation API are enabled within the Cognitive Services resource.
+3. **Enable Required Services**  
+Ensure services like Speech Translation API are enabled within the Cognitive Services resource.
 
 ## Environmental Configuration
 
-- **Set Environment Variables**
-   - **Action:** Store subscription key and region as environment variables (`COG_SERVICE_KEY` and `COG_SERVICE_REGION`) for secure access within the Python script.
+**Set Environment Variables**  
+ Store subscription key and region as environment variables (`COG_SERVICE_KEY` and `COG_SERVICE_REGION`) for secure access within the Python script.
 
 ## Resource Management and Monitoring
 
-- **Resource Monitoring**
-   - **Action:** Regularly monitor Cognitive Services usage, manage quotas, and scale resources as needed.
+**Resource Monitoring**  
+ Regularly monitor Cognitive Services usage, manage quotas, and scale resources as needed.
 
-- **Error Handling**
-   - **Action:** Implement error handling to manage service interruptions or authentication failures.
+**Error Handling**  
+Implement error handling to manage service interruptions or authentication failures.
 
 ## Security and Access Control
 
-- **Access Control**
-   - **Action:** Configure access control policies in the Azure portal to control access to Cognitive Services resources.
+**Access Control**  
+Configure access control policies in the Azure portal to control access to Cognitive Services resources.
 
 ## Compliance and Governance
 
-- **Compliance**
-   - **Action:** Ensure compliance with data protection regulations when handling user speech information.
+**Compliance**  
+ Ensure compliance with data protection regulations when handling user speech information.
 
 ## Billing and Cost Management
 
-- **Billing Analysis**
-   - **Action:** Monitor usage and costs associated with using Azure Cognitive Services.
+**Billing Analysis**  
+Monitor usage and costs associated with using Azure Cognitive Services.
 
 ## Documentation and Support
 
-- **Azure Documentation**
-   - **Action:** Refer to Azure's official documentation for Cognitive Services for guides and troubleshooting.
+**Azure Documentation**  
+ Refer to Azure's official documentation for Cognitive Services for guides and troubleshooting.
 
 ## Conclusion
 
