@@ -1,5 +1,7 @@
 # Real-Time Speech Translation using Azure Cognitive Services
 
+![Image Description](images\speech-translator-app-1.png)
+
 **Author:** Kunal Yadav  
 **Email:** mailmekunal2002@gmail.com  
 **LinkedIn:** [Kunal Yadav](https://www.linkedin.com/in/kunal-yadav-274879225/)
